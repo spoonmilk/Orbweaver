@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
   return (
     <div className="w-xl h-48 border border-slate-700 rounded-lg">
-      <span className="font-normal text-slate-950">{currentUrl}</span>
+      <p className="font-normal text-slate-950">{currentUrl}</p>
     </div>
   );
 };
