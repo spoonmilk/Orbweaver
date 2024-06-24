@@ -7,5 +7,5 @@
     "default_popup": "dist/index.html",
     "default_title": "Orbweaver Extension"
   },
-  "permissions": ["tabs", "activeTab"]
+  "permissions": ["tabs", "activeTab", "storage"]
 }
