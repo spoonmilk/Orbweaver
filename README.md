@@ -1,3 +1,3 @@
 # Orbweaver
 
-A web-crawling notetaking aid for internet rabbit holes
+A web-crawling research aid for internet rabbit holes

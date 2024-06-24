@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "React TypeScript Tailwind Chrome Extension",
+  "name": "Orbweaver Extension Dev Build",
   "version": "1.0.0",
-  "description": "A boilerplate for Chrome extension using React, TypeScript, and Tailwind CSS.",
+  "description": "A research aid which weaves a web of recently visited urls so that you can always retrace your steps; built using React, TypeScript, and Tailwind CSS.",
   "action": {
     "default_popup": "dist/index.html",
-    "defualt_title": "Orbweaver Extension"
+    "default_title": "Orbweaver Extension"
   },
   "permissions": ["tabs", "activeTab"]
 }
