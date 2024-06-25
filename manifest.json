@@ -2,10 +2,14 @@
   "manifest_version": 3,
   "name": "Orbweaver Extension Dev Build",
   "version": "1.0.0",
-  "description": "A research aid which weaves a web of recently visited urls so that you can always retrace your steps; built using React, TypeScript, and Tailwind CSS.",
+  "description": "A research aid which weaves a web of recently visited URLs so that you can always retrace your steps; built using React, TypeScript, and Tailwind CSS.",
   "action": {
     "default_popup": "dist/index.html",
     "default_title": "Orbweaver Extension"
   },
-  "permissions": ["tabs", "activeTab", "storage"]
+  "permissions": ["tabs", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
 }

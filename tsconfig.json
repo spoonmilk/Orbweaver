@@ -4,6 +4,7 @@
     "lib": ["dom", "es6"],
     "allowJs": true,
     "skipLibCheck": true,
+    "outDir": "./dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
