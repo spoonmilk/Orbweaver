@@ -9,7 +9,7 @@
   },
   "permissions": ["tabs", "activeTab", "storage"],
   "background": {
-    "service_worker": "src/background.ts",
+    "service_worker": "dist/background.js",
     "type": "module"
   }
 }
