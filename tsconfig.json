@@ -16,5 +16,5 @@
     "jsx": "react",
     "types": ["chrome"]
   },
-  "include": ["src"]
+  "include": ["src", "src/background.ts"]
 }
