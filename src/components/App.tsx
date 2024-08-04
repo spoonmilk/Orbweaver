@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { RunButton } from './RunButton';
 
 const App: React.FC = () => {
   const [urls, setUrls] = useState<string[]>([]);
@@ -12,9 +13,10 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Visited URLs</h1>
-      <ul>
+    <div className='w-[600px] flex flex-col space-y-2 bg-slate-700'>
+      <RunButton/>
+      <h1 className='font-semibold text-neutral-200'>Visited URLs</h1>
+      <ul className='list-disc text-neutral-400 font-light leading-relaxed'>
         {urls.map((url, index) => (
           <li key={index}>{url}</li>
         ))}
