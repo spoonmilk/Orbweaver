@@ -7,7 +7,8 @@
     "default_popup": "dist/index.html",
     "default_title": "Orbweaver Extension"
   },
-  "permissions": ["tabs", "activeTab", "storage"],
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "host_permissions": ["*://*/*"],
   "background": {
     "service_worker": "dist/background.js",
     "type": "module"

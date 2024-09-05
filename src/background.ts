@@ -1,12 +1,13 @@
-import { getPageText } from "./site-content.js";
+import { getPageText, logTest } from "./site-content.js";
 
 // Logic for saving URLs in background
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete' && tab.url) {
     console.log('Tab URL:', tab.url);
     // Here you can store the URL in storage or do other processing
+    logTest(); // Remove later
     storeUrl(tab.url);
-    
+    getPageText(tab);
   }
 });
 
@@ -15,6 +16,7 @@ chrome.tabs.onActivated.addListener((activeInfo) => {
     if (tab.url) {
       console.log('Active Tab URL:', tab.url);
       // Here you can store the URL in storage or do other processing
+      logTest();
       storeUrl(tab.url);
       console.log("Getting page text");
       getPageText(tab);

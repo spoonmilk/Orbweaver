@@ -24,3 +24,6 @@ export var getPageText = function (tab) {
         }
     });
 };
+export function logTest() {
+    console.log("Test Success\n");
+}

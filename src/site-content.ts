@@ -30,3 +30,10 @@ export const getPageText = (tab: chrome.tabs.Tab) => {
         }
     )
 }
+
+export function logTest() {
+    console.log("Test Success\n");
+}
+
+
+    
